@@ -1,0 +1,22 @@
+{
+  "name": "nats-experiments",
+  "version": "0.1.0",
+  "description": "Some experiments with NATS (https://nats.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanwalther/nats-experiments.git"
+  },
+  "keywords": [
+    "nats"
+  ],
+  "author": "Stefan Walther <swr.nixda@gmail.com> (http://qliksite.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanwalther/nats-experiments/issues"
+  },
+  "homepage": "https://github.com/stefanwalther/nats-experiments#readme"
+}
