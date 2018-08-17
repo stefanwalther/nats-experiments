@@ -1,0 +1,24 @@
+version: '2'
+services:
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    logging:
+      driver: none
+
+  nats:
+    image: nats
+    ports:
+      - "4444:4444"
+      - "4222:4222"
+    command: ["-m", "4444"]
+
+  natsboard:
+    image: urashidmalik/natsboard
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      - NATS_MONITOR_URL=http://nats:4444
